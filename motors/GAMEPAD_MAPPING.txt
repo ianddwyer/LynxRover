@@ -11,9 +11,9 @@ Drive Mode:
 -	Trigger Upper Right: Reverse right
 -	Trigger Upper Left: Reverse left
 Arm Mode:
--	Dpad right/left: arm forward back
--	Dpad up: arm forward back
--	Dpad down: arm down
+-	Dpad right/left: arm right/left
+-	Dpad up: arm forward
+-	Dpad down: arm back
 -	O: Rotate claw right
 -	square: Rotate claw left
 -	triangle: elbow up
