@@ -1,0 +1,16 @@
+COMMS/CONTROLS CAUTIONS: 
+-	Under penalty of law, do not exceed maximum EIRP power for 2.4GHz unlicensed band when adjusting gain on radio through the gateway or appending non-OEM antennas to the radio.
+-	-	Caution of operating arm/claw given the slip ring was the wrong kind and cords at shoulder were not considered given the mechanics of the joints. The arm can only rotate within a 2pi radian range or cords may tug at the shoulder.
+-	Caution operating claw as only 5 rotations of the NEO motor are required to open and close the claw where CAN positional data was not accessible given the data from the manufacturer of the controller.
+-	The radio should be placed on a separate current controlled device parallel to the motors to choke power kicked back from the motors since it shares the same 24V bus. Changes in motors will blackout radio if not properly configured.
+-	Devices at the control side are connected to the STA, therefore only LAN connections are possible without another router, which is not suggested.
+-	Caution using high kp/kd values on the AK60 motors.
+-	Do not use large steps in velocity or position when testing AK60 motors on a power supply which does not have a regulating unit to dissipate power kicked back from reverse torque.
+-	It is not suggested to do steps larger than pi radians with the AK60 motors.
+-	Caution using the pullup resistors on the esp32 comms control boards as improper or unnecessary use will prevent communication of I2C.
+-	Do not use SPI with the esp32 communication boards that are connected to the sensors. These ports are not properly configured as it was an initial prototype. Also, caution using the GPIO ports on these boards without ensuring that power and ground are bridges as to circumvent another design defect.
+-	Caution configuring controller for analog control as response of motors is spontaneous due to blocking in event class required for python controller script. Arduino controller should be designed as a buffer between the pad and computer with a python script that checks these values to get X and Y coordinates to use the analog controls properly and safely.
+-	Caution using high power or long-distance settings on the Ubiquiti when in close range.
+-	Do not use AirMax as it will block non-Ubiquiti devices from joining the network.
+-	All devices must be set up using manually defined static IP settings for each device otherwise connections will be either unstable or will not connect. Currently only Windows appears to use DHCP protocols capable of joining without setting the IP but connection is slow.
+-	Do not place GPS antenna near Ubiquiti antenna as it will act as an asynchronous waveguide and disrupt signals.

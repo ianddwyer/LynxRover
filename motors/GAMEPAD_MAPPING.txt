@@ -1,0 +1,22 @@
+GAMEPAD MAPPING:
+-	Home: arm mode
+-	Touchpad: drive mode
+-	Select: exit mode and reset
+Drive Mode:
+-	Dpad up/down: move forward and back
+-	O: increase speed
+-	square: decrease speed
+-	Trigger Lower Right: Forward right
+-	Trigger Lower Left: Forward left
+-	Trigger Upper Right: Reverse right
+-	Trigger Upper Left: Reverse left
+Arm Mode:
+-	Dpad right/left: arm forward back
+-	Dpad up: arm forward back
+-	Dpad down: arm down
+-	O: Rotate claw right
+-	square: Rotate claw left
+-	triangle: elbow up
+-	X: elbow down
+-	Trigger Right: Tighten Claw
+-	Trigger Left: Loosen Claw

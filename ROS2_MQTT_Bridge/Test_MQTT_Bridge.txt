@@ -1,0 +1,14 @@
+#install ROS humnle for Ubuntu 20.04 or 22.04
+#THERE IS A LARGE CHANCE THAT HUMBLE WILL NOT BE USED LATER
+#THIS METHOD CAN STILL BE USED IF MQTT IS PORTED INTO NEW ROS FRAMEWORK
+#FOR AN OLDER, MORE COMPATIBLE VERSION
+#build a workspace from official ROS python example
+#at root of workspace in a terminal, run this after saving python script:
+
+colcon build --packages-select py_pubsub
+
+source /opt/ros/humble/setup.bash
+
+. install/setup.bash
+
+ros2 run py_pubsub talker

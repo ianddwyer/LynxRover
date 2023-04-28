@@ -1,0 +1,33 @@
+FOR ARDUINO: IMPORT FROM LIBRARIES FOR BEST RESULTS. DO NOT USE MULTIPLE OF SAME LIBRARY
+IF MCP2515 DOES NOT WORK FROM LIB BELOW, SEARCH FOR "MCP2515" IN "LIBRARIES"
+AND IMPORT THAT ARDUINO FILE INTO YOUR NATIVE ARDUINO "LIBRARIES" (IN DOCUMENTS/ARDUINO/LIBRARIES)
+
+DEPENDANCIES:
+
+Arduino:
+-	Mosquitto MQTT broker (type mosquitto -v to check if running)
+-	Arduino Uno Wifi Dev Ed Library by Arduino
+-	Adafruit BNO055 by Adafruit
+-	Adafruit BusIO by Adafruit
+-	Adafruit Unified Sensor by Adafruit
+-	ArduinoJson by Benoit Blanchon
+-	SparkFun I2C GPS Reading and Control by Sparkfun
+-	SparkFun u-blox GNSS v3 by Sparkfun
+-	TinyGPSPlus by Mikal Hart
+-	Autowp-mcp2515 by autowp
+-	Wifi_logins.h (custom credentials file placed in libraries or with local ino file) 
+
+Python: (set_AK_motor_speed.py does not work from spyder due to PIP, use cmd or terminal)
+-	Paho MQTT (DOES NOT WORK UNLESS YOU STATICALLY ASSIGN YOUR COMPUTERS IP TO THE UBIQUITI NETWORK... ALL DEVICES NEED TO BE MANUALLY ASSIGNED IPs)
+-	evdev on linux (note that every new install of evdev requires remapping of controller buttons)
+-	json (should be native to all pythons)
+
+
+Place the following links in preferences before installing esp32 and pubsubclient:
+-	https://github.com/knolleary/pubsubclient/releases/tag/v2.8
+-	https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+-	ESP32 board installed after including git repositories above.
+-	PubSubClient by Nick O’Leary (install after adding git repository above)
+Other Applications:
+-	IoT MQTT Panel for Android (use json file provided in zip to load setup. Read all cautions before use of any controller program.)
+-	CubeMars rLink for setting CAN IDs (download, set english bottom left. See official manuals and video to familiarize with software before use for safety of the motors and other equipment)
